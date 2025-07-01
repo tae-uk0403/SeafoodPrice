@@ -1,0 +1,329 @@
+.fish-price-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.fish-price-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+}
+
+.fish-price-header h1 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.selector label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+}
+
+.selector select,
+.selector input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  width: 100%;
+  max-width: 250px;
+}
+
+.latest-price-section {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.latest-price-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.price-card {
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+}
+
+.price-card h3 {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.price-card .price {
+  color: #e74c3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.price-card .weight,
+.price-card .origin {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.charts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.fish-list-section {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fish-list-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.fish-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fish-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.9rem;
+}
+
+.fish-table th,
+.fish-table td {
+  padding: 8px 6px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.fish-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.fish-table tr:hover {
+  background: #f8f9fa;
+}
+
+/* 태블릿 (768px 이상) */
+@media (min-width: 768px) {
+  .fish-price-container {
+    padding: 20px;
+  }
+  
+  .fish-price-header {
+    padding: 30px;
+  }
+  
+  .fish-price-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .selectors {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .selector {
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .price-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .charts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .chart-container {
+    padding: 25px;
+  }
+  
+  .chart-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .fish-list-section {
+    padding: 30px;
+  }
+  
+  .fish-table th,
+  .fish-table td {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+  
+  .fish-table th {
+    font-size: 1rem;
+  }
+}
+
+/* 데스크톱 (1024px 이상) */
+@media (min-width: 1024px) {
+  .fish-price-container {
+    padding: 30px;
+  }
+  
+  .fish-price-header {
+    padding: 40px;
+  }
+  
+  .latest-price-section {
+    padding: 30px;
+  }
+  
+  .price-cards {
+    gap: 30px;
+  }
+  
+  .price-card {
+    padding: 25px;
+  }
+  
+  .price-card .price {
+    font-size: 2rem;
+  }
+  
+  .price-card .weight,
+  .price-card .origin {
+    font-size: 1.3rem;
+  }
+}
+
+/* 매우 작은 화면 (320px 이하) */
+@media (max-width: 320px) {
+  .fish-price-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .selector select,
+  .selector input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+  
+  .price-card .price {
+    font-size: 1.3rem;
+  }
+  
+  .fish-table {
+    font-size: 0.8rem;
+  }
+  
+  .fish-table th,
+  .fish-table td {
+    padding: 6px 4px;
+  }
+}
+
+/* 터치 디바이스 최적화 */
+@media (hover: none) and (pointer: coarse) {
+  .selector select,
+  .selector input {
+    min-height: 44px; /* 터치하기 쉬운 크기 */
+  }
+  
+  .price-card {
+    min-height: 80px;
+  }
+  
+  .fish-table th,
+  .fish-table td {
+    min-height: 44px;
+  }
+} 
